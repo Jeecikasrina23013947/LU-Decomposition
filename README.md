@@ -8,31 +8,45 @@ To write a program to find the LU Decomposition of a matrix.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. read the elements of augmented matrix into array a and b
+2. calculate elements of L and U
+3. print L and U matrix
+4. find V by solving LV=B by forword substitution
+5. find X by solving UX = V by backward substitution
+6. print array X as the solution
 
 ## Program:
 (i) To find the L and U matrix
-```
-/*
-Program to find the L and U matrix.
-Developed by: 
-RegisterNumber: 
-*/
+```python
+'''Program to find L and U matrix using LU decomposition.
+Developed by: JEECIKASRINA M
+RegisterNumber: 23013947
+'''
+import numpy as np
+from scipy.linalg import lu
+A = np.array(eval(input()))
+P,L,U=lu(A)
+print(L)
+print(U)
 ```
 (ii) To find the LU Decomposition of a matrix
-```
-/*
-Program to find the LU Decomposition of a matrix.
-Developed by: 
-RegisterNumber: 
-*/
+```python
+'''Program to solve a matrix using LU decomposition.
+Developed by: JEECIKASRINA M
+RegisterNumber: 23013947
+'''
+import numpy as np
+from scipy.linalg import lu_factor, lu_solve
+A,B=eval(input()),eval(input())
+lu,piv=lu_factor(A)
+x = lu_solve((lu,piv),B)
+print(x)
 ```
 
 ## Output:
-![lu decomposition]()
+![image](https://github.com/Jeecikasrina23013947/LU-Decomposition/assets/148515300/7a849d36-f36e-4129-8ff9-028c6cccf830)
+![image](https://github.com/Jeecikasrina23013947/LU-Decomposition/assets/148515300/aa147bc4-59dc-45d6-b2f5-1d1e5128b101)
+
 
 
 ## Result:
