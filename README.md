@@ -42,13 +42,12 @@ lu,piv=lu_factor(A)
 x = lu_solve((lu,piv),B)
 print(x)
 ```
-
 ## Output:
-![image](https://github.com/Jeecikasrina23013947/LU-Decomposition/assets/148515300/7a849d36-f36e-4129-8ff9-028c6cccf830)
-![image](https://github.com/Jeecikasrina23013947/LU-Decomposition/assets/148515300/aa147bc4-59dc-45d6-b2f5-1d1e5128b101)
+(i) To find the L and U matrix.
+![image](https://github.com/Jeecikasrina23013947/LU-Decomposition/assets/148515300/d7a2270f-f538-4fe0-a615-eb0a58202da2)
 
-
-
+(ii) To find the LU Decomposition of a matrix.
+![image](https://github.com/Jeecikasrina23013947/LU-Decomposition/assets/148515300/e21e7530-6368-4e99-bb60-ae29a975139e)
 ## Result:
 Thus the program to find the LU Decomposition of a matrix is written and verified using python programming.
 
